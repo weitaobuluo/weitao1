@@ -1,0 +1,44 @@
+//
+//  PrefixHeader.pch
+//  WeiTao
+//
+//  Created by qianfeng on 15/12/11.
+//  Copyright (c) 2015年 PJ. All rights reserved.
+//
+
+#ifndef WeiTao_PrefixHeader_pch
+#define WeiTao_PrefixHeader_pch
+//添加头文件
+
+#import "AFNetworking.h"
+#import "UIImageView+WebCache.h"
+#import "UIButton+WebCache.h"
+#import "JHRefresh.h"
+//宏定义
+#define  kUIScreen_Size [[UIScreen mainScreen]bounds].size
+#define kHomeCell_Height 500
+#define kManCell_Height 163
+#define  kHeadView_Url  @"http://service.api.yohobuy.com/operations/api/v5/resource/home?app_version=3.8.0.1511200002&client_secret=59b46f50d2b5bce6a9832cb7d95d86bb&client_type=iphone&content_code=201504091403002&gender=2%2C3&limit=20&os_version=8.3&page=1&screen_size=320x568&uid=11181263&v=7"
+#define kFenlei @"http://open3.bantangapp.com/category/list?app_installtime=1445654136.488849&app_versions=4.2.3&channel_name=appStore&client_id=bt_app_ios&client_secret=9c1e6634ce1c5098e056628cd66a17a5&os_versions=9.0.2&track_device_info=iPhone8%2C1&track_deviceid=E8756EAB-F218-491E-9128-CD205632CFE0&v=7"
+#define kXiangQing @"http://open3.bantangapp.com/topic/list?app_installtime=1445654136.488849&app_versions=4.2.3&category=%@&channel_name=appStore&client_id=bt_app_ios&client_secret=9c1e6634ce1c5098e056628cd66a17a5&os_versions=9.0.2&page=%d&pagesize=20&screensize=750&track_device_info=iPhone82C1&track_deviceid=E8756EAB-F218-491E-9128-CD205632CFE0&v=7"
+#define kMiaoshu @"http://open3.bantangapp.com/topic/info?app_installtime=1445654136.488849&app_versions=4.2.3&channel_name=appStore&client_id=bt_app_ios&client_secret=9c1e6634ce1c5098e056628cd66a17a5&id=%@&os_versions=9.0.2&screensize=750&statistics_uv=1&track_device_info=iPhone82C1&track_deviceid=E8756EAB-F218-491E-9128-CD205632CFE0&v=7"
+#define kWalkNew @"http://service.api.yohobuy.com/guang/api/v2/article/getList?/app_version=3.8.0.1511200002&client_secret=cd7be334679f25635a40fa07c3fe1cbb&client_type=iphone&gender=1%2C3&limit=20&os_version=8.3&page=1&screen_size=320x568&sort_id=0&udid=4897bccda62a5ce177600621824c510c1db2ffcc&uid=11181263&v=7&yh_channel=1"
+#define kTopic @"http://service.api.yohobuy.com/guang/api/v2/article/getList?/app_version=3.8.0.1511200002&client_secret=94adff6b9f9d83b3ba25d92403ebc2a6&client_type=iphone&gender=1%2C3&limit=20&os_version=8.3&page=1&screen_size=320x568&sort_id=1&udid=4897bccda62a5ce177600621824c510c1db2ffcc&uid=11181263&v=7&yh_channel=1"
+#define kMatch @"http://service.api.yohobuy.com/guang/api/v2/article/getList?/app_version=3.8.0.1511200002&client_secret=ab0f203d6e35037e910ac1b87e446ca5&client_type=iphone&gender=1%2C3&limit=20&os_version=8.3&page=1&screen_size=320x568&sort_id=2&udid=4897bccda62a5ce177600621824c510c1db2ffcc&uid=11181263&v=7&yh_channel=1"
+#define kTidePerson @"http://service.api.yohobuy.com/guang/api/v2/article/getList?/app_version=3.8.0.1511200002&client_secret=934aded9b6a1fb24a3999e1b3951a798&client_type=iphone&gender=1%2C3&limit=20&os_version=8.3&page=1&screen_size=320x568&sort_id=3&udid=4897bccda62a5ce177600621824c510c1db2ffcc&uid=11181263&v=7&yh_channel=1"
+#define kTide @"http://service.api.yohobuy.com/guang/api/v2/article/getList?/app_version=3.8.0.1511200002&client_secret=e6a387a2b0693718d9d026e938c53a1c&client_type=iphone&gender=1%2C3&limit=20&os_version=8.3&page=1&screen_size=320x568&sort_id=4&udid=4897bccda62a5ce177600621824c510c1db2ffcc&uid=11181263&v=7&yh_channel=1"
+#define kExperience @"http://service.api.yohobuy.com/guang/api/v2/article/getList?/app_version=3.8.0.1511200002&client_secret=57ff36cfce083ee18fd6e82688af672f&client_type=iphone&gender=1%2C3&limit=20&os_version=8.3&page=2&screen_size=320x568&sort_id=5&udid=4897bccda62a5ce177600621824c510c1db2ffcc&uid=11181263&v=7&yh_channel=1"
+#endif
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <QuartzCore/QuartzCore.h>
+
+//define this constant if you want to use Masonry without the 'mas_' prefix
+#define MAS_SHORTHAND
+
+//define this constant if you want to enable auto-boxing for default syntax
+#define MAS_SHORTHAND_GLOBALS
+
+
+#endif

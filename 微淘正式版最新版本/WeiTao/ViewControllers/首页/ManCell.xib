@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="162" id="KGk-i7-Jjw" customClass="ManCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="162"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BLp-3v-ihK">
+                        <rect key="frame" x="0.0" y="0.0" width="380" height="161"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p8X-02-PYs">
+                        <rect key="frame" x="16" y="132" width="359" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="BLp-3v-ihK" secondAttribute="bottom" constant="2" id="SNu-Nc-WOR"/>
+                    <constraint firstItem="BLp-3v-ihK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="VCn-Ym-Q6Z"/>
+                    <constraint firstItem="BLp-3v-ihK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="hpL-d0-3Bd"/>
+                    <constraint firstItem="p8X-02-PYs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="ido-rj-RxJ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="BLp-3v-ihK" secondAttribute="trailing" constant="5" id="suh-0h-SvP"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="p8X-02-PYs" secondAttribute="trailing" constant="-8" id="yDS-oX-FDo"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="foreImageView" destination="BLp-3v-ihK" id="TGg-XM-7QQ"/>
+                <outlet property="title" destination="p8X-02-PYs" id="1p5-Du-qxY"/>
+            </connections>
+            <point key="canvasLocation" x="396.5" y="309"/>
+        </tableViewCell>
+    </objects>
+</document>
