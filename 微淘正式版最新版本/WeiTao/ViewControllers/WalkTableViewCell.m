@@ -12,6 +12,7 @@
 
 - (void)setModel:(ArtListModel *)model{
     _model=model;
+    //小白
     [_headImageView sd_setImageWithURL:[NSURL URLWithString:model.src]];
     _headImageView.layer.cornerRadius=15;
     _headImageView.layer.masksToBounds=YES;
